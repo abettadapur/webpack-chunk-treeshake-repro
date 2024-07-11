@@ -1,0 +1,21 @@
+{
+  "name": "rspack-chunk-repro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node -r esbuild-register build.ts",
+    "build-webpack": "node -r esbuild-register build-webpack.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@8.15.1+sha512.831cf4c5f8b8374af71521d4d153db49d7086de615c2af7cb5e9d7eb8ba630ddac46fea495d643e552ef2e68a3aa99a3e5e9fbee8696702967504df5c59cb273",
+  "devDependencies": {
+    "@rspack/cli": "0.6.3",
+    "@rspack/core": "0.6.3",
+    "esbuild-loader": "^4.2.0",
+    "esbuild-register": "^3.5.0",
+    "webpack": "^5.92.1"
+  }
+}
