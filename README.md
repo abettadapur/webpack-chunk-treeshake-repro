@@ -1,0 +1,8 @@
+- Structure
+  - src/ contains a async import that is eliminated via tree shaking. However, it still outputs code for the eliminated import
+  - src_works/ contains a re-export of an async import that is eliminated via tree shaking. No code is produced for the eliminated import
+- Scripts:
+  - Run `npm run build` to reproduce the problem. See that a lazy.js chunk is created
+  - Run `npm run build_nosplit` to reproduce the problem without async chunks. See the contents of lazy.ts are included
+  - Run `npm run build_reexport` to run the re-export version. See that lazy.js is not produced
+  - Run `npm run build_reexport_nosplit` to run the re-export version. See that the contents of lazy.ts are NOT included
